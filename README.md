@@ -66,6 +66,45 @@ Pharmora integrates **seven specialized models** to assist with various aspects 
    
    - *Use Case:* Early-stage filtering of chemical libraries to focus on drug-like molecules.
 
+# Pharmora - Advanced Bioinformatics Research Platform
+
+Welcome to **Pharmora**, an all-in-one bioinformatics research platform designed to accelerate drug discovery and molecular research. Pharmora provides a comprehensive set of tools for researchers and scientists working in the fields of cheminformatics, bioinformatics, and pharmaceutical research.
+
+## Overview
+
+Pharmora simplifies the drug discovery process by offering cutting-edge models that enable the analysis, prediction, and screening of drug-like molecules. By leveraging computational techniques, Pharmora helps users optimize lead compounds, predict molecular properties, and explore novel drug candidates, all within a user-friendly interface.
+
+## Intel® Extension for Scikit-learn
+
+In this project, we utilized the **Intel® Extension for Scikit-learn** to enhance the performance of machine learning models. This extension optimizes scikit-learn for Intel® architectures, allowing us to speed up the training and inference of our models without changing the codebase.
+
+### Why Intel® Extension for Scikit-learn?
+
+- **Performance Boost:** The extension allows us to achieve higher computational efficiency, particularly for large datasets or complex models. We experienced faster training and inference times, enabling quicker iterations during the drug discovery process.
+  
+- **Seamless Integration:** The extension integrates smoothly into the existing scikit-learn ecosystem, allowing us to leverage its optimizations with minimal code modifications.
+
+### How We Used Intel’s scikit-learn
+
+We applied Intel® Extension for Scikit-learn in several models, including our **Bioactivity Predictor** and **Molecular Descriptor Calculator**, to accelerate computations involving large molecular datasets.
+
+Here’s an example of how we patched scikit-learn in our code:
+
+python
+import numpy as np
+import dpctl
+from sklearnex import patch_sklearn, config_context
+patch_sklearn()
+
+# Example of using patched scikit-learn models
+from sklearn.ensemble import RandomForestRegressor
+
+# Using Intel-optimized RandomForestRegressor
+model = RandomForestRegressor()
+model.fit(X_train, y_train)
+predictions = model.predict(X_test)
+
+
 ## Installation
 
 To use Pharmora on your local machine, follow the steps below to install the required dependencies and run the platform.
