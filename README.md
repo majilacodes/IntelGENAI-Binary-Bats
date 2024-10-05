@@ -66,14 +66,6 @@ Pharmora integrates **seven specialized models** to assist with various aspects 
    
    - *Use Case:* Early-stage filtering of chemical libraries to focus on drug-like molecules.
 
-# Pharmora - Advanced Bioinformatics Research Platform
-
-Welcome to **Pharmora**, an all-in-one bioinformatics research platform designed to accelerate drug discovery and molecular research. Pharmora provides a comprehensive set of tools for researchers and scientists working in the fields of cheminformatics, bioinformatics, and pharmaceutical research.
-
-## Overview
-
-Pharmora simplifies the drug discovery process by offering cutting-edge models that enable the analysis, prediction, and screening of drug-like molecules. By leveraging computational techniques, Pharmora helps users optimize lead compounds, predict molecular properties, and explore novel drug candidates, all within a user-friendly interface.
-
 ## Intel® Extension for Scikit-learn
 
 In this project, we utilized the **Intel® Extension for Scikit-learn** to enhance the performance of machine learning models. This extension optimizes scikit-learn for Intel® architectures, allowing us to speed up the training and inference of our models without changing the codebase.
@@ -168,17 +160,6 @@ We are constantly improving Pharmora and welcome contributions from the communit
 1. Fork the repository on GitHub.
 2. Create a new branch for your feature or fix.
 3. Submit a pull request with a detailed explanation of your changes.
-
-## License
-
-Pharmora is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Support
-
-For any questions, issues, or suggestions, feel free to reach out via:
-
-- Email: support@pharmora.com
-- GitHub Issues: [Pharmora Issues](https://github.com/your-username/pharmora/issues)
 
 ## Acknowledgments
 
